@@ -32,7 +32,3 @@ long[::-1]
 len(long)
 min(long)
 max(long)
-x="1,3,5,7,9"
-x[1]='1'
-x=x[0::]
-x
