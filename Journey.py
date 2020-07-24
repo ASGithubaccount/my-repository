@@ -111,6 +111,9 @@ dict0 = {
     'Jan' : 55,
     'Marian' : 99
 }
+
+print(dict0)
+
 for name in dict0.keys():
     print(name)
 
@@ -131,3 +134,61 @@ dict2 = {
         'hobby': 'Chess'
     }
 }
+
+mężczyzna = {}
+mężczyzna['imię'] = 'Roman'
+mężczyzna['wiek'] = '57 lat'
+mężczyzna['wzrost'] = '167 cm'
+mężczyzna['waga'] = '76 kg'
+
+print(mężczyzna)
+
+kobieta = {}
+kobieta['imię'] = 'Janina'
+kobieta['wiek'] = '46 lat'
+kobieta['wzrost'] = '159 cm'
+kobieta['waga'] = '79 kg'
+
+print(kobieta)
+    
+osoby = {'kobieta' : {'imię': 'Janina', 'wiek': '46', 'wzrost': '159cm', 'waga': '79kg'},
+         'mężczyzna' : {'imię': 'Roman', 'wiek': '57', 'wzrost': '167cm', 'waga': '76kg'}}
+
+print(osoby)
+
+dict3 = {
+    'Janina' : {
+        'wiek' : 46,
+        'waga' : 79,
+        'języki' : {
+            'polski' : 'biegły',
+            'angielski' : 'zaawansowany',
+            'niemiecki' : 'podstawowy',
+            'chiński' : {
+                'kantoński' : 'średnio zaawansowany',
+                'mandaryński ' : 'podstawowy'
+            }
+        }
+    }
+}
+
+print(dict3)
+
+CV_Marka = {
+    'Marek' : {
+        'wykształcenie' : 'wyższe',
+        'prawo jazdy' : 'kat. b',
+        'znajomość języków' : {
+            'polski' : 'biegły',
+            'angielski' : 'podstawowy',
+            'chiński' : {
+                'kantoński' : 'zaawansowany',
+                'mandaryński' : 'podstawowy'
+            }
+        }
+    }
+}
+
+for kwalifikacje, lista_kwalifikacji in CV_Marka.items():
+    print('%s Marka zawiera poniższe elementy : %s' %(kwalifikacje, lista_kwalifikacji))
+
