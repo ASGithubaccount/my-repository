@@ -112,14 +112,12 @@ y = ["google", "microsoft", "apple"]
 
 print(bool(set(x).intersection(set(y))))
 
-print(bool(z))
-
 a = set(x)
 b = set(y)
 
 have_common_member = a.intersection(b)
 
-print(bool(c))
+print(bool(have_common_member))
 
 # 12. Write a Python program to print a specified list 
 # after removing the 0th, 4th and 5th elements
@@ -165,6 +163,7 @@ print(list15)
 # and last 5 elements where the values are square of numbers between 
 # 1 and 30 (both included)
 
+num_range = (1,30)
 square_list1 = [x*x for x in range(1,num_range)[:5]]
 square_list2 = [x*x for x in range(1,num_range)[-5:]]
 final_square_list = [square_list1 + square_list2]
@@ -225,31 +224,52 @@ print(list(itertools.chain(*list23)))
 
 # 24. Write a Python program to append a list to the second list
 
+list24a = [7, 86, 12, 3, 687, 13, 236]
+list24b = ['s', 't', 'r', 'i', 'n', 'g']
+list24c = list24a + list24b
 
+print(list24c)
 
 # 25. Write a Python program to select an item randomly from a list
 
+import random
 
+list25 = [7, 86, 12, 3, 687, 13, 236]
+print(random.choice(list25))
 
 # 26. Write a python program to check whether two lists are circularly identical
 
+list1 = [10, 10, 0, 0, 10]
+list2 = [10, 10, 10, 0, 0]
+list3 = [1, 10, 10, 0, 0]
 
+print('Compare list1 and list2')
+print(' '.join(map(str, list2)) in ' '.join(map(str, list1 * 2)))
+print('Compare list1 and list3')
+print(' '.join(map(str, list3)) in ' '.join(map(str, list1 * 2)))
 
 # 27. Write a Python program to find the second smallest number in a list
 
+list27 = [7, 86, 12, 3, 687, 13, 236]
 
+list27.sort()
+print(list27[1])
 
 # 28. Write a Python program to find the second largest number in a list
 
+list28 = [7, 86, 12, 3, 687, 13, 236]
 
+list28.sort(reverse=True)
+print(list28[1])
 
 # 29. Write a Python program to get unique values from a list
 
+list29 = [7, 86, 7, 3, 687, 13, 236, 687]
+print(set(list29))
+
+# 30. Write a Python program to get the frequency of the elements in a list
 
 
-#
 
-
-
-#
+# 31. Write a Python program to count the number of elements in a list within a specified range
 
